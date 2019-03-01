@@ -1,1 +1,1 @@
-# www.jermdavis.dev
+# https://www.jermdavis.dev/
