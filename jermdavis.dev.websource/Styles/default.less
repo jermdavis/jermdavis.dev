@@ -1,0 +1,147 @@
+﻿@cellSize: 200px;
+@cellBorder: 5px;
+
+body {
+    background-color: #E9ECE3;
+    font-family: sans-serif;
+    padding:@cellBorder;
+}
+
+div.section, header {
+  padding: 0px;
+  display: inline;
+  margin: 0px;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+article {
+    display: block;
+    float: left;
+
+    width: @cellSize;
+    height: 300px;
+
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-bottom:20px;
+
+    h1, h2 {
+        text-align:center;
+    
+        width: @cellSize - @cellBorder*2;
+        height: @cellSize - @cellBorder*2;
+        line-height: @cellSize - @cellBorder*2;
+
+        border: @cellBorder solid white;
+        border-radius: 10px 10px;
+        margin: 0px;
+        padding: @cellBorder;
+    }
+
+    h1 {
+        color:black;
+    }
+
+    h2 {
+        color:white;
+    }
+
+    a {
+        color: white;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    p {
+        text-align: center;
+        padding: 0px @cellBorder;
+        margin: 0px;
+        margin-top: @cellBorder;
+
+        a, a:hover, a:visited {
+            color: black;
+        }
+    }
+}
+
+
+article.h
+{
+    h1 {
+        background-image: url('../img/grey.jpg')
+    }
+    p:first-of-type {
+          font-weight: bold;
+    }
+}
+
+article.bl h2
+{
+    background-color:#508CC2;
+    background-image: url('../img/wp.png');
+}
+
+article.tw h2
+{
+    background-color:#AE3F8A;
+    background-image: url('../img/tw.png');
+}
+
+article.in h2
+{
+    background-color:#FFA10D;
+    background-image: url('../img/in.png');
+}
+
+article.gh h2
+{
+    background-color:#736252;
+    background-image: url('../img/gh.png');
+}
+
+article.kg h2 {
+    background-color: #1C1C1C;
+    background-image: url('../img/kg.png');
+}
+
+article.so {
+    h2 {
+        background-color: #708448;
+        background-image: url('../img/so.png');
+    }
+    p {
+        padding: 0px 1px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    div.section, header {
+        width: 100%;
+        display: block;
+    }
+    article {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+        float: none;
+        width: @cellSize;
+        height: auto;
+
+        h1, h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

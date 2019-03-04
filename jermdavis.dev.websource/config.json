@@ -1,0 +1,4 @@
+﻿{
+  "webroot": "wwwroot",
+  "deployTarget": "../docs"
+}
